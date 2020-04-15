@@ -2,8 +2,8 @@
 <html lang="en">
 <!-- A Intro to Coding for Journalists class project -->
 <head>
-  <title>{% block page_title %}Default title{% endblock %}</title>
-  <meta name="description" content="{% block page_description %}Default description{% endblock %}">
+<title>Pirate Cove | {% block page_title %}Default title{% endblock %}</title>  
+<meta name="description" content="{% block page_description %}Default description{% endblock %}">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -11,7 +11,9 @@
 </head>
 <body>
   {% include "_partials/nav.njk" %}
-
+ 
+ {% include "_partials/jumbotron.njk" %}
+ 
   {% block content %}{% endblock %}
 
   {% include "_partials/footer.njk" %}
